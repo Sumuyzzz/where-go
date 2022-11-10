@@ -13,6 +13,13 @@ export default defineConfig({
     ),
     Components({
       resolvers: [ElementPlusResolver()],
+      dts: true,
+      dirs: ['src/components'],
+      importPathTransform: v => v,
+      extensions: ['vue'],
+      deep: true,
+      include: [/\.vue$/, /\.vue\?vue/],
+      exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/],
     }),
   ],
   server: {
