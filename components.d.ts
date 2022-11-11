@@ -7,7 +7,20 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Header: typeof import('./src/components/Header.vue')['default']
+    ElCard: typeof import('element-plus/es')['ElCard']
+    ElContainer: typeof import('element-plus/es')['ElContainer']
+    ElFooter: typeof import('element-plus/es')['ElFooter']
+    ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElIcon: typeof import('element-plus/es')['ElIcon']
+    ElInput: typeof import('element-plus/es')['ElInput']
+    ElMain: typeof import('element-plus/es')['ElMain']
+    Footer: typeof import('./src/components/Footer.vue')['default']
+    Header: typeof import('./src/components/Home/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    HomeHeader: typeof import('./src/components/Home/HomeHeader.vue')['default']
+    HomeMain: typeof import('./src/components/Home/HomeMain.vue')['default']
+    HomeTabs: typeof import('./src/components/Home/HomeTabs.vue')['default']
+    Layout: typeof import('./src/components/Layout.vue')['default']
+    Main: typeof import('./src/components/Main.vue')['default']
   }
 }

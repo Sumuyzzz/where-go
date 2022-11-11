@@ -1,10 +1,10 @@
 <script setup lang="ts">
-
+import Home from '../view/Home.vue'
 </script>
 
 <template>
-  <div>
-    Header
+  <div class="h-full">
+    <Home />
   </div>
 </template>
 
