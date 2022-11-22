@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { faker as faker_zh_CN } from '@faker-js/faker/locale/zh_CN'
 import { onMounted, reactive, ref } from 'vue'
+import { getRandom } from '@/tools/util'
 
 interface ImgageItem {
   url: string
   name: string
   price: number
 }
-const getRandom = (min: number, max: number) => Math.floor(Math.random() * (max - min) + min)
+
 const imgageUrl = ref(faker_zh_CN.image.city())
 const imgageName = ref(faker_zh_CN.address.cityName())
 const imgagePrice = ref(getRandom(700, 1000))
@@ -43,7 +44,7 @@ onMounted(
       </div>
     </div>
     <div class="m-0  p-0 h-38">
-      <el-scrollbar>
+      <ElScrollbar>
         <ul class="list-none px-3 m-0 flex">
           <li v-for="(item, index) in imageList" :key="index" class="mx-1 flex flex-col items-center">
             <img :src="item.url" class="h-25 w-25">
@@ -60,7 +61,7 @@ onMounted(
             </div>
           </li>
         </ul>
-      </el-scrollbar>
+      </ElScrollbar>
     </div>
   </div>
 </template>
