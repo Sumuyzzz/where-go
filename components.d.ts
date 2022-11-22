@@ -23,6 +23,7 @@ declare module '@vue/runtime-core' {
     HomeMain: typeof import('./src/components/Home/HomeMain.vue')['default']
     HomeTabs: typeof import('./src/components/Home/HomeTabs.vue')['default']
     HomeWeeklyHotList: typeof import('./src/components/Home/HomeWeeklyHotList.vue')['default']
+    HomeWeeklyList: typeof import('./src/components/Home/HomeWeeklyList.vue')['default']
     Layout: typeof import('./src/components/Layout.vue')['default']
     Main: typeof import('./src/components/Main.vue')['default']
   }

@@ -17,7 +17,9 @@
         <HomeLikeList />
       </el-card>
     </el-main>
-    <el-footer>Footer</el-footer>
+    <el-footer class="p-0 m-0">
+      <HomeWeeklyList />
+    </el-footer>
   </el-container>
 </template>
 
