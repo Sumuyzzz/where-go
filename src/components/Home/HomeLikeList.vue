@@ -49,7 +49,7 @@ onMounted(() => {
     </div>
     <div>
       <ul class="list-none">
-        <li v-for="(likeItem, likeIndex) in likeList" :key="likeIndex" class="h-25 flex b-1 items-center">
+        <li v-for="(likeItem, likeIndex) in likeList" :key="likeIndex" class="h-25 flex b-b-1 b-gray-300 py-3 items-center">
           <div class=" overflow-hidden">
             <img :src="likeItem.url" class="h-25 w-25">
           </div>
@@ -74,6 +74,9 @@ onMounted(() => {
           </div>
         </li>
       </ul>
+    </div>
+    <div class="p-b-2 flex justify-center items-center text-cyan-500 text-sm">
+      查看所有产品
     </div>
   </div>
 </template>
