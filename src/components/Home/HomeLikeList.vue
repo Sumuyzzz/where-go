@@ -9,7 +9,7 @@ interface Star {
   color: string
 }
 
-interface LikeItem {
+interface Like {
   url: string
   name: string
   country: string
@@ -17,7 +17,7 @@ interface LikeItem {
 const imgageUrl = faker_zh_CN.image.abstract()
 const imgageName = faker_zh_CN.address.streetName()
 const imgageCountry = faker_zh_CN.address.country()
-const likeItem: Ref<LikeItem> = ref({
+const like: Ref<Like> = ref({
   url: imgageUrl,
   name: imgageName,
   country: imgageCountry,
@@ -28,13 +28,13 @@ const star: Ref<Star> = ref({
   name: 'i-material-symbols-star-rounded',
   color: 'bg-red-500',
 })
-const likeList: Array<LikeItem> = reactive([])
+const likeList: Array<Like> = reactive([])
 const starList: Array<Star> = reactive([])
 
 onMounted(() => {
   for (let i = 0; i < 5; i++) {
     starList.push(star.value)
-    likeList.push(likeItem.value)
+    likeList.push(like.value)
   }
 })
 </script>
