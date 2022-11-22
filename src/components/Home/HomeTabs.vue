@@ -23,19 +23,21 @@ const imgageUrl = faker_zh_CN.image.nightlife()
       <div class=" h-40 overflow-hidden px-2 py-3 ">
         <img :src="imgageUrl" alt="" class="w-full h-full">
       </div>
-      <div class="flex justify-between mx-2 my-2 b-t-1 b-gray-400">
-        <div class="flex flex-col">
-          <div>广州一日游:陈家祠</div>
-          <div class="text-xs text-gray-400 ">
-            可订明白
+      <div class="cursor-pointer">
+        <div class="flex justify-between mx-2 my-2 b-t-1 b-gray-400 ">
+          <div class="flex flex-col">
+            <div>广州一日游:陈家祠+广州塔</div>
+            <div class="text-xs text-gray-400 ">
+              可订明白
+            </div>
+          </div>
+          <div class="text-rose-500 text-sm ">
+            ￥68
           </div>
         </div>
-        <div class="text-rose-500 text-sm ">
-          ￥68
+        <div class="flex justify-center text-cyan-500">
+          查看所有产品
         </div>
-      </div>
-      <div class="flex justify-center text-cyan-500">
-        查看所有产品
       </div>
     </div>
   </div>
