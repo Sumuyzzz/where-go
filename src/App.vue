@@ -4,15 +4,17 @@
 </script>
 
 <template>
-  <Header />
+  <Layout />
 </template>
 
-<style scoped>
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+<style>
+#app{
+  height: 100vh;
+  margin: 0;
 }
-
-.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 </style>

@@ -14,11 +14,15 @@
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
+    "@unocss/reset": "^0.46.4",
     "element-plus": "^2.2.20",
     "vue": "^3.2.41"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.29.4",
+    "@faker-js/faker": "^7.6.0",
+    "@iconify/json": "^2.1.136",
+    "@unocss/preset-icons": "^0.46.4",
     "@unocss/preset-rem-to-px": "^0.46.4",
     "@unocss/vite": "^0.46.4",
     "@vitejs/plugin-vue": "^3.2.0",
