@@ -1,4 +1,12 @@
 <script setup lang="ts">
+import { useRoute } from 'vue-router'
+import router from '@/router'
+const route = useRoute()
+const jumpSearchPage = () => {
+  router.push({
+    name: 'search',
+  })
+}
 </script>
 
 <template>
@@ -8,7 +16,7 @@
     </div>
 
     <div class=" w-17/20">
-      <el-input placeholder="输入城市/景点/游玩主题">
+      <el-input placeholder="输入城市/景点/游玩主题" @focus="jumpSearchPage">
         <template #prefix>
           <div class="i-material-symbols-search" />
         </template>
