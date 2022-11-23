@@ -1,10 +1,13 @@
 <script setup lang="ts">
-
+import router from '@/router'
+const jumpToHomePage = () => {
+  router.back()
+}
 </script>
 
 <template>
   <div class="flex h-full items-center px-2 bg-white justify-between">
-    <div class="w-10  flex justify-center">
+    <div class="w-10  flex justify-center" @click="jumpToHomePage">
       <div class="i-material-symbols-arrow-back-ios-rounded" />
     </div>
     <div class="w-full px-2">

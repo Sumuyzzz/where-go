@@ -39,7 +39,7 @@ onMounted(() => {
         </ul>
       </div>
     </div>
-    <el-card >
+    <el-card>
       <div class=" bg-white ">
         <div class="flex justify-between  b-[#dce5e7] p-2">
           <div class="text-[#888]">
