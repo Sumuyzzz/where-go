@@ -4,12 +4,12 @@
 
 <template>
   <el-container>
-    <el-header class="p-0 h-90 ">
+    <el-header class="!p-0 !h-90 ">
       <el-card>
         <HomeTabs />
       </el-card>
     </el-header>
-    <el-main class="p-0">
+    <el-main class="!p-0">
       <el-card class="m-b-2">
         <HomeWeeklyHotList />
       </el-card>
