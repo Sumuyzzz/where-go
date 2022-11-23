@@ -7,6 +7,13 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ElCard: typeof import('element-plus/es')['ElCard']
+    ElContainer: typeof import('element-plus/es')['ElContainer']
+    ElFooter: typeof import('element-plus/es')['ElFooter']
+    ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElInput: typeof import('element-plus/es')['ElInput']
+    ElMain: typeof import('element-plus/es')['ElMain']
+    ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
     HomeHeader: typeof import('./src/components/Home/HomeHeader.vue')['default']
     HomeLikeList: typeof import('./src/components/Home/HomeLikeList.vue')['default']
     HomeMain: typeof import('./src/components/Home/HomeMain.vue')['default']
@@ -18,5 +25,6 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SearchHeader: typeof import('./src/components/Search/SearchHeader.vue')['default']
+    SearchMain: typeof import('./src/components/Search/SearchMain.vue')['default']
   }
 }
