@@ -7,10 +7,16 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Header: typeof import('./src/components/Header.vue')['default']
+    HomeHeader: typeof import('./src/components/Home/HomeHeader.vue')['default']
+    HomeLikeList: typeof import('./src/components/Home/HomeLikeList.vue')['default']
+    HomeMain: typeof import('./src/components/Home/HomeMain.vue')['default']
+    HomeTabs: typeof import('./src/components/Home/HomeTabs.vue')['default']
+    HomeWeeklyHotList: typeof import('./src/components/Home/HomeWeeklyHotList.vue')['default']
+    HomeWeeklyList: typeof import('./src/components/Home/HomeWeeklyList.vue')['default']
     Layout: typeof import('./src/components/Layout.vue')['default']
     Main: typeof import('./src/components/Main.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SearchHeader: typeof import('./src/components/Search/SearchHeader.vue')['default']
   }
 }

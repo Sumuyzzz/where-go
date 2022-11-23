@@ -4,7 +4,7 @@ import Home from '../view/Home.vue'
 
 <template>
   <div class="h-full">
-    <Home />
+    <router-view />
   </div>
 </template>
 
