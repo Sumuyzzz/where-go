@@ -31,13 +31,13 @@ onMounted(() => {
     <div class="p-3">
       周末去哪儿
     </div>
-    <ul class="list-none p-0 m-0">
+    <ul class="list-none p-0 m-0 ">
       <li v-for="(item, index) in likeList" :key="index">
         <ElCard class="mb-2">
           <div>
-            <img :src="item.url" class="h-36 w-72">
+            <img :src="item.url" class=" w-full">
           </div>
-          <div class="p-3">
+          <div class="p-3 ">
             <div class="text-sm">
               {{ item.name }}
             </div>

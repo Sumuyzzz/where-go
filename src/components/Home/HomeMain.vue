@@ -4,7 +4,7 @@
 
 <template>
   <el-container>
-    <el-header class="!p-0 !h-90 ">
+    <el-header class="!p-0 ">
       <el-card>
         <HomeTabs />
       </el-card>
@@ -17,7 +17,7 @@
         <HomeLikeList />
       </el-card>
     </el-main>
-    <el-footer class="p-0 m-0">
+    <el-footer class="!p-0">
       <HomeWeeklyList />
     </el-footer>
   </el-container>

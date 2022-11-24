@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { faker as faker_zh_CN } from '@faker-js/faker/locale/zh_CN'
+import { ref } from 'vue'
 
 const imgageUrl = faker_zh_CN.image.nightlife()
+
+const perimeter = ref(false)
 </script>
 
 <template>
@@ -16,7 +19,7 @@ const imgageUrl = faker_zh_CN.image.nightlife()
         <div>必玩榜单</div>
       </div>
     </div>
-    <div class="h-75 ">
+    <div v-show="perimeter" class="h-75">
       <div class="p-2">
         在景区门口？立即订票
       </div>
