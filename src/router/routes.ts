@@ -10,5 +10,10 @@ const routes: Array<RouteRecordRaw> = [
     name: 'search',
     component: () => import('@/view/Search.vue'),
   },
+  {
+    path: '/cityList',
+    name: 'cityList',
+    component: () => import('@/view/CityList.vue'),
+  },
 ]
 export default routes
