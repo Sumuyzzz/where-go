@@ -12,6 +12,7 @@ specifiers:
   element-plus: ^2.2.20
   eslint: ^8.27.0
   husky: ^8.0.2
+  pinyin-pro: ^3.12.0
   sass: ^1.56.1
   typescript: ^4.6.4
   unocss: ^0.46.4
@@ -22,12 +23,15 @@ specifiers:
   vue: ^3.2.41
   vue-router: '4'
   vue-tsc: ^1.0.9
+  vuetify: ^3
 
 dependencies:
   '@unocss/reset': 0.46.4
   element-plus: 2.2.20_vue@3.2.43
+  pinyin-pro: 3.12.0
   vue: 3.2.43
   vue-router: 4.1.6_vue@3.2.43
+  vuetify: 3.0.2_vue@3.2.43
 
 devDependencies:
   '@antfu/eslint-config': 0.29.4_rmayb2veg2btbq6mbmnyivgasy
@@ -1100,7 +1104,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: r2.cnpmjs.org/fsevents/2.3.2
     dev: true
 
   /ci-info/3.5.0:
@@ -2049,14 +2053,6 @@ packages:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
 
-  /fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
   /function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
     dev: true
@@ -2874,6 +2870,10 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
+  /pinyin-pro/3.12.0:
+    resolution: {integrity: sha512-NTrgzqUr0mAzwIbVw+jSnknaTrby+/hKChBYVxQJzYAs3/jgGdvm9I71pMMi69tCFFSKbzmjgPg7bZ5rPR7JkQ==}
+    dev: false
+
   /pkg-types/0.3.6:
     resolution: {integrity: sha512-uQZutkkh6axl1GxDm5/+8ivVdwuJ5pyDGqJeSiIWIUWIqYiK3p9QKozN/Rv6eVvFoeSWkN1uoYeSDBwwBJBtbg==}
     dependencies:
@@ -2993,7 +2993,7 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: r2.cnpmjs.org/fsevents/2.3.2
     dev: true
 
   /run-parallel/1.2.0:
@@ -3466,7 +3466,7 @@ packages:
       rollup: 2.79.1
       sass: 1.56.1
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: r2.cnpmjs.org/fsevents/2.3.2
     dev: true
 
   /vite/3.2.3_sass@1.56.1:
@@ -3500,7 +3500,7 @@ packages:
       rollup: 2.79.1
       sass: 1.56.1
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: r2.cnpmjs.org/fsevents/2.3.2
     dev: true
 
   /vitest/0.25.1_sass@1.56.1:
@@ -3617,6 +3617,25 @@ packages:
       '@vue/server-renderer': 3.2.43_vue@3.2.43
       '@vue/shared': 3.2.43
 
+  /vuetify/3.0.2_vue@3.2.43:
+    resolution: {integrity: sha512-d+lb8DHUrrn9GnKaZW1dEApjIEamUcZn1HxomiQ0+y8t+jKjktpruo16AvAjpEHhAcCeWZ5RuK/S9HdT6z68Uw==}
+    engines: {node: ^12.20 || >=14.13}
+    peerDependencies:
+      vite-plugin-vuetify: ^1.0.0-alpha.12
+      vue: ^3.2.0
+      vue-i18n: ^9.0.0
+      webpack-plugin-vuetify: ^2.0.0-alpha.11
+    peerDependenciesMeta:
+      vite-plugin-vuetify:
+        optional: true
+      vue-i18n:
+        optional: true
+      webpack-plugin-vuetify:
+        optional: true
+    dependencies:
+      vue: 3.2.43
+    dev: false
+
   /webpack-sources/3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
@@ -3680,3 +3699,13 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  r2.cnpmjs.org/fsevents/2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/fsevents/-/fsevents-2.3.2.tgz}
+    name: fsevents
+    version: 2.3.2
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true

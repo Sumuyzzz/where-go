@@ -2,11 +2,15 @@
 import { faker as faker_zh_CN } from '@faker-js/faker/locale/zh_CN'
 import { onMounted, reactive, ref } from 'vue'
 import { getRandom } from '@/tools/util'
-
 interface ImgageItem {
   url: string
   name: string
   price: number
+  top?: {
+    color: () => string
+    content: string
+  } | undefined
+
 }
 
 const imageList: Array<ImgageItem> = reactive([])
@@ -21,6 +25,19 @@ onMounted(
         url: imgageUrl,
         name: imgageName,
         price: imgagePrice,
+        top: i < 3
+          ? {
+              color: () => {
+                if (i === 0)
+                  return '#ff342e'
+                else if (i === 1)
+                  return '#ff7e2a'
+                else
+                  return '#ffa11f'
+              },
+              content: `Top.${i + 1}`,
+            }
+          : undefined,
       })
       imageList.push(imgageItem)
     }
@@ -48,9 +65,9 @@ onMounted(
       <ElScrollbar>
         <ul class="list-none px-3 m-0 flex text-xs">
           <li v-for="(item, index) in imageList" :key="index" class="mx-1 flex flex-col items-center">
-            <el-badge value="tpo 1" class="left-0 top-0">
+            <v-badge rounded="1" text-color="white" offset-x="90" offset-y="10" :content="item.top?.content" :color="item.top?.color()" :model-value="item.top?.content ? true : false">
               <img :src="item.url" class="h-25 w-25">
-            </el-badge>
+            </v-badge>
             <div>
               {{ item.name }}
             </div>
@@ -69,6 +86,10 @@ onMounted(
   </div>
 </template>
 
-<style scoped>
-
+<style scoped lang="scss">
+:deep(.v-badge__badge){
+  display: flex;
+  font-size: 12px;
+  padding:1px 4px;
+}
 </style>
